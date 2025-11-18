@@ -1,0 +1,50 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4a5d5f55-8f27-42f3-9d0e-58454202e331</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Ejercicio9.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication3</Name>
+    <RootNamespace>PythonApplication3</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Ejercicio0.py" />
+    <Compile Include="Ejercicio2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ejercicio3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ejercicio1.py" />
+    <Compile Include="Ejercicio4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ejercicio5.py" />
+    <Compile Include="Ejercicio6.py" />
+    <Compile Include="Ejercicio7_P.py" />
+    <Compile Include="Ejercicio8.py" />
+    <Compile Include="Ejercicio9.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
